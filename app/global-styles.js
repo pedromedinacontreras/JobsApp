@@ -8,7 +8,7 @@ injectGlobal`
   }
 
   body {
-    font-family: Avenir;
+    font-family: Arial;
   }
 
   #app {
