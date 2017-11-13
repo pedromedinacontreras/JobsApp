@@ -8,11 +8,21 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import AppBar from 'material-ui/AppBar';
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
+import Avatar from 'material-ui/Avatar';
+import ExpandibleIcon from 'material-ui/svg-icons/navigation/arrow-drop-down';
+import ServiciosTop from 'components/ServiciosTop';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
+import {
+   TopbarSection,
+   LogoSection,
+   Logo,
+   ProfileSection,
+   ProfileName,
+   ExpandibleSection,
+ } from './StyledComponents';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   /**
@@ -33,10 +43,27 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
             { name: 'description', content: 'A React.js Boilerplate application homepage' },
           ]}
         />
-        <AppBar
-          title="Title"
-          iconClassNameRight="muidocs-icon-navigation-expand-more"
-        />
+        <TopbarSection>
+          <LogoSection>
+            <Logo>Officium</Logo>
+          </LogoSection>
+          <ProfileSection>
+            <div>
+              <Avatar
+                src="https://laopinionla.files.wordpress.com/2015/11/dove_leduo_hair-emojis_2.png?w=1024"
+              />
+            </div>
+            <ProfileName>
+              Aslly Melisse Vega Corvera
+            </ProfileName>
+            <ExpandibleSection>
+              <ExpandibleIcon
+                color="#E1F5FE"
+              />
+            </ExpandibleSection>
+          </ProfileSection>
+        </TopbarSection>
+        <ServiciosTop />
       </article>
     );
   }
