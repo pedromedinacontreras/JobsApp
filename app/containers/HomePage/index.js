@@ -40,7 +40,19 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
       </LogoPrincipalSection>
       <InfoJobsItem
         title="¿Quiénes somos?"
-        body="Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios."
+        body="Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados"
+      />
+      <InfoJobsItem
+        title="Mision"
+        body="Facilitar la busqueda y la contratacion de servicios, garantizando un trabajo de alta calidad para la sastisfacion del cliente"
+      />
+      <InfoJobsItem
+        title="Vision"
+        body="Ser una plataforma lider en servicios con la meta de expandernos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran"
+      />
+      <InfoJobsItem
+        title="Valores"
+        body="Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza"
       />
     </article>);
   }
