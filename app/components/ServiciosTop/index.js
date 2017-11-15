@@ -9,32 +9,31 @@ import { CardMedia, CardTitle, Card } from 'material-ui/Card';
 import {
   Title,
   TopServiciosSection,
-  ServicioList,
+  ServicioItem,
   SecondTitle,
+  ServiciosList,
  } from './StyledComponents';
 
 const allServicios = () =>
   (
-    <ul>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-      <ServicioList>Carpintería</ServicioList>
-    </ul>
+    <ServiciosList>
+      <ServicioItem>Carpintería</ServicioItem>
+      <ServicioItem>Plomería</ServicioItem>
+      <ServicioItem>Herrería</ServicioItem>
+      <ServicioItem>Electricista</ServicioItem>
+      <ServicioItem>Albañilería</ServicioItem>
+      <ServicioItem>Cerrajería</ServicioItem>
+      <ServicioItem>Mecánico</ServicioItem>
+      <ServicioItem>Vulcanizadora</ServicioItem>
+      <ServicioItem>Técnico en refrigeración</ServicioItem>
+      <ServicioItem>Pintor</ServicioItem>
+      <ServicioItem>Tapicero</ServicioItem>
+      <ServicioItem>Carpintería</ServicioItem>
+      <ServicioItem>Carpintería</ServicioItem>
+      <ServicioItem>Carpintería</ServicioItem>
+      <ServicioItem>Carpintería</ServicioItem>
+      <ServicioItem>Carpintería</ServicioItem>
+    </ServiciosList>
   );
 
 function ServiciosTop() {

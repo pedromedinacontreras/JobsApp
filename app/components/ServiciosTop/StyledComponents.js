@@ -28,9 +28,26 @@ export const TopServiciosSection = styled.div`
   justify-content: space-between;
 `;
 
-export const ServicioList = styled.li`
+export const ServicioItem = styled.li`
   cursor: pointer;
   float: left;
   padding-right: 100px;
   line-height: 4;
+  display: inline-block;
 `;
+
+export const ServiciosList = styled.ul`
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+`;
+
+// display: flex;
+// Align-items: center;
+// Flex-wrap: wrap;
+// Justify-content- space-between;
+
+
+// Display: inline-block;
+// Margin: 0 3.1rem 1rem 0;
