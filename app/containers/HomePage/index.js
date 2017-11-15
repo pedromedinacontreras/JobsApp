@@ -9,6 +9,7 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
+import InfoJobsItem from 'components/InfoJobsItem';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -37,6 +38,10 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
           <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
         </div>
       </LogoPrincipalSection>
+      <InfoJobsItem
+        title="¿Quiénes somos?"
+        body="Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios."
+      />
     </article>);
   }
 }
