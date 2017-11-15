@@ -8,7 +8,7 @@ injectGlobal`
   }
 
   body {
-    font-family: Arial;
+    font-family: 'Montserrat', sans-serif;
   }
 
   #app {

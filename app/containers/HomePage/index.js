@@ -16,13 +16,16 @@ import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import {
-   TopbarSection,
-   LogoSection,
-   Logo,
-   ProfileSection,
-   ProfileName,
-   ExpandibleSection,
- } from './StyledComponents';
+  TopbarSection,
+  LogoSection,
+  Logo,
+  ProfileSection,
+  ProfileName,
+  ExpandibleSection,
+  LogoPrincipalSection,
+  LogoText,
+  LogoSubText,
+} from './StyledComponents';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
   /**
@@ -35,37 +38,30 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
   }
 
   render() {
-    return (
-      <article>
-        <Helmet
-          title="Home Page"
-          meta={[
-            { name: 'description', content: 'A React.js Boilerplate application homepage' },
-          ]}
-        />
-        <TopbarSection>
-          <LogoSection>
-            <Logo>Officium</Logo>
-          </LogoSection>
-          <ProfileSection>
-            <div>
-              <Avatar
-                src="https://laopinionla.files.wordpress.com/2015/11/dove_leduo_hair-emojis_2.png?w=1024"
-              />
-            </div>
-            <ProfileName>
-              Aslly Melisse Vega Corvera
-            </ProfileName>
-            <ExpandibleSection>
-              <ExpandibleIcon
-                color="#E1F5FE"
-              />
-            </ExpandibleSection>
-          </ProfileSection>
-        </TopbarSection>
-        <ServiciosTop />
-      </article>
-    );
+    return (<article>
+      <Helmet title="Home Page" meta={[{ name: 'description', content: 'A React.js Boilerplate application homepage' }]} />
+      <TopbarSection>
+        <LogoSection>
+          <Logo>Officium</Logo>
+        </LogoSection>
+        <ProfileSection>
+          <div>
+            <Avatar src="https://laopinionla.files.wordpress.com/2015/11/dove_leduo_hair-emojis_2.png?w=1024" />
+          </div>
+          <ProfileName>Aslly Melisse Vega Corvera</ProfileName>
+          <ExpandibleSection>
+            <ExpandibleIcon color="#E1F5FE" />
+          </ExpandibleSection>
+        </ProfileSection>
+      </TopbarSection>
+      <LogoPrincipalSection>
+        <div>
+          <LogoText>Officium</LogoText>
+          <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
+        </div>
+      </LogoPrincipalSection>
+      <ServiciosTop />
+    </article>);
   }
 }
 
