@@ -9,19 +9,11 @@ import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
-import Avatar from 'material-ui/Avatar';
-import ExpandibleIcon from 'material-ui/svg-icons/navigation/arrow-drop-down';
-import ServiciosTop from 'components/ServiciosTop';
+import InfoJobsItem from 'components/InfoJobsItem';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
 import {
-  TopbarSection,
-  LogoSection,
-  Logo,
-  ProfileSection,
-  ProfileName,
-  ExpandibleSection,
   LogoPrincipalSection,
   LogoText,
   LogoSubText,
@@ -40,27 +32,16 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
   render() {
     return (<article>
       <Helmet title="Home Page" meta={[{ name: 'description', content: 'A React.js Boilerplate application homepage' }]} />
-      <TopbarSection>
-        <LogoSection>
-          <Logo>Officium</Logo>
-        </LogoSection>
-        <ProfileSection>
-          <div>
-            <Avatar src="https://laopinionla.files.wordpress.com/2015/11/dove_leduo_hair-emojis_2.png?w=1024" />
-          </div>
-          <ProfileName>Aslly Melisse Vega Corvera</ProfileName>
-          <ExpandibleSection>
-            <ExpandibleIcon color="#E1F5FE" />
-          </ExpandibleSection>
-        </ProfileSection>
-      </TopbarSection>
       <LogoPrincipalSection>
         <div>
-          <LogoText>Officium</LogoText>
+          <LogoText>Servicios mx</LogoText>
           <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
         </div>
       </LogoPrincipalSection>
-      <ServiciosTop />
+      <InfoJobsItem
+        title="¿Quiénes somos?"
+        body="Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios. Servicios mx es una plataforma que permite a sus usuarios publicar o buscar servicios."
+      />
     </article>);
   }
 }
