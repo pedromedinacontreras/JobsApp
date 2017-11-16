@@ -40,19 +40,19 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
       </LogoPrincipalSection>
       <InfoJobsItem
         title="¿Quiénes somos?"
-        body="Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados"
+        body="Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. "
       />
       <InfoJobsItem
-        title="Mision"
-        body="Facilitar la busqueda y la contratacion de servicios, garantizando un trabajo de alta calidad para la sastisfacion del cliente"
+        title="Misión"
+        body="Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. "
       />
       <InfoJobsItem
-        title="Vision"
-        body="Ser una plataforma lider en servicios con la meta de expandernos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran"
+        title="Visión"
+        body="Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. "
       />
       <InfoJobsItem
         title="Valores"
-        body="Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza"
+        body="Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. "
       />
     </article>);
   }
