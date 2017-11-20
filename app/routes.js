@@ -18,7 +18,7 @@ export default function createRoutes(store) {
 
   return [
     {
-      path: '/',
+      path: '/informacion',
       name: 'home',
       getComponent(nextState, cb) {
         const importModules = Promise.all([
@@ -80,6 +80,46 @@ export default function createRoutes(store) {
 
         importModules.then(([reducer, sagas, component]) => {
           injectReducer('logIn', reducer.default);
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: 'recuperar-contrasena',
+      name: 'recoverPassword',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/RecoverPassword/reducer'),
+          import('containers/RecoverPassword/sagas'),
+          import('containers/RecoverPassword'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('recoverPassword', reducer.default);
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
+      path: '/registro',
+      name: 'userRegister',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/UserRegister/reducer'),
+          import('containers/UserRegister/sagas'),
+          import('containers/UserRegister'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('userRegister', reducer.default);
           injectSagas(sagas.default);
           renderRoute(component);
         });

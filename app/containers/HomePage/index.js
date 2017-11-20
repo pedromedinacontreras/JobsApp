@@ -17,6 +17,7 @@ import {
   LogoPrincipalSection,
   LogoText,
   LogoSubText,
+  InformationSection,
 } from './StyledComponents';
 
 export class HomePage extends React.PureComponent { // eslint-disable-line react/prefer-stateless-function
@@ -30,31 +31,32 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
   }
 
   render() {
-    return (<article>
-      <Helmet title="Home Page" meta={[{ name: 'description', content: 'A React.js Boilerplate application homepage' }]} />
-      <LogoPrincipalSection>
-        <div>
-          <LogoText>Servicios mx</LogoText>
-          <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
-        </div>
-      </LogoPrincipalSection>
-      <InfoJobsItem
-        title="¿Quiénes somos?"
-        body="Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. "
-      />
-      <InfoJobsItem
-        title="Misión"
-        body="Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. "
-      />
-      <InfoJobsItem
-        title="Visión"
-        body="Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. "
-      />
-      <InfoJobsItem
-        title="Valores"
-        body="Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. "
-      />
-    </article>);
+    return (
+      <InformationSection>
+        <Helmet title="Home Page" meta={[{ name: 'description', content: 'A React.js Boilerplate application homepage' }]} />
+        <LogoPrincipalSection>
+          <div>
+            <LogoText>Servicios mx</LogoText>
+            <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
+          </div>
+        </LogoPrincipalSection>
+        <InfoJobsItem
+          title="¿Quiénes somos?"
+          body="Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. Somos una empresa mexicana especializada en servicios comprometida a brindarte la facilidad y seguridad de los servicios contradados. "
+        />
+        <InfoJobsItem
+          title="Misión"
+          body="Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. Facilitar la búsqueda y la contratación de servicios, garantizando un trabajo de alta calidad para la sastisfacción del cliente. "
+        />
+        <InfoJobsItem
+          title="Visión"
+          body="Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. Ser una plataforma líder en servicios con la meta de expandirnos a nivel nacional para llevar nuestros servicios hasta el lugar que lo requieran. "
+        />
+        <InfoJobsItem
+          title="Valores"
+          body="Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. Nos caracterizamos por ser responsables, transparentes, eficaces y de confianza. "
+        />
+      </InformationSection>);
   }
 }
 

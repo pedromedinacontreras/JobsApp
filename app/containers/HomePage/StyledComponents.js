@@ -26,3 +26,8 @@ export const LogoSubText = styled.div`
   text-align: center;
   font-weight: 300;
 `;
+
+export const InformationSection = styled.article`
+  float: left;
+  background-color: #FAFAFA;
+`;

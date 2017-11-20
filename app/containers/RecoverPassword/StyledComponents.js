@@ -9,15 +9,26 @@ export const LogInSection = styled.div`
   justify-content: center;
 `;
 
+export const CenteredSection = styled.div`
+
+`;
+
 export const FormSection = styled.div`
   max-width: 350px;
+`;
+
+export const FormContainer = styled.div`
+  float: left;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 `;
 
 export const TitleSection = styled.div`
   text-align: center;
   font-family: 'Poiret One';
-  font-size: 45px;
-  margin-bottom: 20px;
+  font-size: 36px;
+  margin-bottom: 10px;
   cursor: pointer;
 `;
 
@@ -29,4 +40,12 @@ export const PasswordForgotten = styled.div`
   color: #01579b;
   margin-top: 18px;
   cursor: pointer;
+`;
+
+export const InstructionMessage = styled.div`
+  float: left;
+  width: 100%;
+  text-align: center;
+  color: #0288D1;
+  margin-bottom: 50px;
 `;
