@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const LogInSection = styled.div`
+export const SignUpSection = styled.div`
   float: left;
   width: 100%;
   min-height: 90vh;

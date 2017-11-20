@@ -33,7 +33,7 @@ export class LogIn extends React.Component { // eslint-disable-line react/prefer
             />
           </TitleSection>
           <TextField
-            hintText="Usuario"
+            hintText="Correo electrónico"
             type="email"
             style={styles.fullWidth}
             underlineFocusStyle={{ borderColor: '#01579b' }}

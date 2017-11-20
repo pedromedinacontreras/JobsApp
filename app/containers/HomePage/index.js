@@ -10,6 +10,7 @@ import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
 import InfoJobsItem from 'components/InfoJobsItem';
+import BuildIcon from 'material-ui/svg-icons/action/build';
 import { loadRepos } from '../App/actions';
 import { changeUsername } from './actions';
 import { makeSelectUsername } from './selectors';
@@ -36,7 +37,13 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <Helmet title="Home Page" meta={[{ name: 'description', content: 'A React.js Boilerplate application homepage' }]} />
         <LogoPrincipalSection>
           <div>
-            <LogoText>Servicios mx</LogoText>
+            <LogoText>
+              Servicios mx
+              <BuildIcon
+                style={{ width: 50, height: 50, marginLeft: 30 }}
+                color="#01579b"
+              />
+            </LogoText>
             <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
           </div>
         </LogoPrincipalSection>
