@@ -7,6 +7,7 @@
 import React from 'react';
 import { CardMedia, CardTitle, Card } from 'material-ui/Card';
 import {
+  ServiciosTopSection,
   Title,
   TopServiciosSection,
   ServicioItem,
@@ -36,9 +37,31 @@ const allServicios = () =>
     </ServiciosList>
   );
 
+const allStates = () =>
+  (
+    <ServiciosList>
+      <ServicioItem>Baja California Norte</ServicioItem>
+      <ServicioItem>Baja California Sur</ServicioItem>
+      <ServicioItem>Sonora</ServicioItem>
+      <ServicioItem>Chihuahua</ServicioItem>
+      <ServicioItem>Sinaloa</ServicioItem>
+      <ServicioItem>Durango</ServicioItem>
+      <ServicioItem>Jalisco</ServicioItem>
+      <ServicioItem>Nuevo León</ServicioItem>
+      <ServicioItem>Baja California Norte</ServicioItem>
+      <ServicioItem>Baja California Sur</ServicioItem>
+      <ServicioItem>Sonora</ServicioItem>
+      <ServicioItem>Chihuahua</ServicioItem>
+      <ServicioItem>Sinaloa</ServicioItem>
+      <ServicioItem>Durango</ServicioItem>
+      <ServicioItem>Jalisco</ServicioItem>
+      <ServicioItem>Nuevo León</ServicioItem>
+    </ServiciosList>
+  );
+
 function ServiciosTop() {
   return (
-    <div>
+    <ServiciosTopSection>
       <Title>
         Top servicios
       </Title>
@@ -73,7 +96,15 @@ function ServiciosTop() {
           allServicios()
         }
       </TopServiciosSection>
-    </div>
+      <SecondTitle>
+        Busca por estado
+      </SecondTitle>
+      <TopServiciosSection>
+        {
+          allStates()
+        }
+      </TopServiciosSection>
+    </ServiciosTopSection>
   );
 }
 

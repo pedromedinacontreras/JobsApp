@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const ServiciosTopSection = styled.div`
+  float: left;
+  width: 100%;
+  min-height: 90vh;
+  background-color: #fafafa;
+`;
+
 export const Title = styled.div`
   float: left;
   width: 100%;
