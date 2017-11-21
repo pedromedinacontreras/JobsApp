@@ -44,24 +44,24 @@ export class ProfileWorker extends React.Component { // eslint-disable-line reac
   };
 
   handleOpen = () => {
-    this.setState({open: true});
+    this.setState({ open: true });
   };
 
   handleClose = () => {
-    this.setState({open: false});
+    this.setState({ open: false });
   };
 
   render() {
     const actions = [
       <FlatButton
         label="Cancelar"
-        primary={true}
+        primary
         onClick={this.handleClose}
       />,
       <FlatButton
         label="Calificar"
-        primary={true}
-        keyboardFocused={true}
+        primary
+        keyboardFocused
         onClick={this.handleClose}
       />,
     ];

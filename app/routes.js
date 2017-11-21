@@ -167,6 +167,26 @@ export default function createRoutes(store) {
         importModules.catch(errorLoading);
       },
     }, {
+      path: '/lista-servicios/:servicio',
+      name: 'serviciosList',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          import('containers/ServiciosList/reducer'),
+          import('containers/ServiciosList/sagas'),
+          import('containers/ServiciosList'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([reducer, sagas, component]) => {
+          injectReducer('serviciosList', reducer.default);
+          injectSagas(sagas.default);
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    }, {
       path: '*',
       name: 'notfound',
       getComponent(nextState, cb) {
