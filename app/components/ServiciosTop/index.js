@@ -6,6 +6,7 @@
 
 import React from 'react';
 import { CardMedia, CardTitle, Card } from 'material-ui/Card';
+import BuildIcon from 'material-ui/svg-icons/action/build';
 import {
   ServiciosTopSection,
   Title,
@@ -13,6 +14,9 @@ import {
   ServicioItem,
   SecondTitle,
   ServiciosList,
+  LogoPrincipalSection,
+  LogoText,
+  LogoSubText,
  } from './StyledComponents';
 
 const allServicios = () =>
@@ -62,6 +66,18 @@ const allStates = () =>
 function ServiciosTop() {
   return (
     <ServiciosTopSection>
+      <LogoPrincipalSection>
+        <div>
+          <LogoText>
+            Servicios mx
+            <BuildIcon
+              style={{ width: 50, height: 50, marginLeft: 30 }}
+              color="#01579b"
+            />
+          </LogoText>
+          <LogoSubText>Un lugar para encontrar trabajadores</LogoSubText>
+        </div>
+      </LogoPrincipalSection>
       <Title>
         Top servicios
       </Title>

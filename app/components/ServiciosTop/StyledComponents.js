@@ -50,6 +50,33 @@ export const ServiciosList = styled.ul`
   justify-content: space-between;
 `;
 
+export const LogoPrincipalSection = styled.div`
+  width: 100vw;
+  min-height: 70vh
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const LogoText = styled.div`
+  float: left;
+  width: 100%;
+  font-size: 100px;
+  text-align: center;
+  color: black;
+  font-family: 'Poiret One';
+`;
+
+export const LogoSubText = styled.div`
+  float: left;
+  width: 100%;
+  font-size: 18px;
+  text-align: center;
+  font-weight: 300;
+`;
+
+
 // display: flex;
 // Align-items: center;
 // Flex-wrap: wrap;
