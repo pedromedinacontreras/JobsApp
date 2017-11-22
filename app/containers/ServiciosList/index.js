@@ -6,6 +6,7 @@
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 import { createStructuredSelector } from 'reselect';
 import {
   Table,
@@ -121,8 +122,8 @@ export class ServiciosList extends React.Component { // eslint-disable-line reac
             >
               <TableRow key={1}>
                 <TableRowColumn style={styles.amountText}>
-                  <Avatar src="https://scontent.fcul1-1.fna.fbcdn.net/v/t1.0-9/12802924_987444907970156_5055128181689396351_n.jpg?oh=d53d3b32deddb9840c34dedf7f0401c1&oe=5AA49AA0" />
-                  <UserName>Aslly Melisse Vega Corvera</UserName>
+                  <Avatar onClick={() => browserHistory.push('perfil-trabajador/melisse')} src="https://scontent.fcul1-1.fna.fbcdn.net/v/t1.0-9/12802924_987444907970156_5055128181689396351_n.jpg?oh=d53d3b32deddb9840c34dedf7f0401c1&oe=5AA49AA0" />
+                  <UserName onClick={() => browserHistory.push('perfil-trabajador/melisse')}>Aslly Melisse Vega Corvera</UserName>
                 </TableRowColumn>
                 <TableRowColumn style={styles.itemText}>Culiacán, Sinaloa</TableRowColumn>
                 <TableRowColumn style={styles.itemText}><Grade>4.7</Grade><RatingIconPerfect /><UserName>en 22 opiniones</UserName></TableRowColumn>

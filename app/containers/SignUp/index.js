@@ -5,6 +5,7 @@
  */
 
 import React, { PropTypes } from 'react';
+import { browserHistory } from 'react-router';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
 import TextField from 'material-ui/TextField';
@@ -72,9 +73,10 @@ export class SignUp extends React.Component { // eslint-disable-line react/prefe
                 labelColor="#E1F5FE"
                 style={styles.buttonStyle}
                 labelStyle={styles.labelStyle}
+                onClick={() => browserHistory.push('/')}
               />
-              <PasswordForgotten>Inicia sesión</PasswordForgotten>
-              <PasswordForgotten>¿Qué es Servicios mx?</PasswordForgotten>
+              <PasswordForgotten onClick={() => browserHistory.push('/recuperar-contrasena')}>Inicia sesión</PasswordForgotten>
+              <PasswordForgotten onClick={() => browserHistory.push('/informacion')}>¿Qué es Servicios mx?</PasswordForgotten>
             </FormSection>
           </FormContainer>
         </CenteredSection>

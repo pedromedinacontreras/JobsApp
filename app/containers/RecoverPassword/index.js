@@ -6,6 +6,7 @@
 
 import React, { PropTypes } from 'react';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 import { createStructuredSelector } from 'reselect';
 import TextField from 'material-ui/TextField';
 import RaisedButton from 'material-ui/RaisedButton';
@@ -47,9 +48,10 @@ export class RecoverPassword extends React.Component { // eslint-disable-line re
                 labelColor="#E1F5FE"
                 style={styles.buttonStyle}
                 labelStyle={styles.labelStyle}
+                onClick={() => browserHistory.push('/')}
               />
-              <PasswordForgotten>Inicia sesión</PasswordForgotten>
-              <PasswordForgotten>Crea una cuenta</PasswordForgotten>
+              <PasswordForgotten onClick={() => browserHistory.push('/inicio-sesion')}>Inicia sesión</PasswordForgotten>
+              <PasswordForgotten onClick={() => browserHistory.push('/registro')}>Crea una cuenta</PasswordForgotten>
             </FormSection>
           </FormContainer>
         </CenteredSection>

@@ -7,6 +7,7 @@
 import React from 'react';
 import Helmet from 'react-helmet';
 import { connect } from 'react-redux';
+import { browserHistory } from 'react-router';
 import { createStructuredSelector } from 'reselect';
 import { makeSelectRepos, makeSelectLoading, makeSelectError } from 'containers/App/selectors';
 import InfoJobsItem from 'components/InfoJobsItem';
@@ -37,7 +38,7 @@ export class HomePage extends React.PureComponent { // eslint-disable-line react
         <Helmet title="Home Page" meta={[{ name: 'description', content: 'A React.js Boilerplate application homepage' }]} />
         <LogoPrincipalSection>
           <div>
-            <LogoText>
+            <LogoText style={{ cursor: 'pointer' }} onClick={() => browserHistory.push('/')}>
               Servicios mx
               <BuildIcon
                 style={{ width: 50, height: 50, marginLeft: 30 }}

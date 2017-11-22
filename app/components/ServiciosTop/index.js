@@ -7,6 +7,7 @@
 */
 
 import React from 'react';
+import { browserHistory } from 'react-router';
 import BuildIcon from 'material-ui/svg-icons/action/build';
 import Avatar from 'material-ui/Avatar';
 import {
@@ -29,7 +30,7 @@ import {
 const allServicios = () =>
   (
     <ServiciosList>
-      <ServicioItem>Carpintería</ServicioItem>
+      <ServicioItem onClick={() => browserHistory.push('/lista-servicios/carpinteria')}>Carpintería</ServicioItem>
       <ServicioItem>Plomería</ServicioItem>
       <ServicioItem>Herrería</ServicioItem>
       <ServicioItem>Electricista</ServicioItem>
@@ -106,7 +107,7 @@ function ServiciosTop() {
     <ServiciosTopSection>
       <LogoPrincipalSection>
         <div>
-          <LogoText>
+          <LogoText style={{ cursor: 'pointer' }} onClick={() => browserHistory.push('/informacion')}>
             Servicios mx
             <BuildIcon
               style={{ width: 50, height: 50, marginLeft: 30 }}
@@ -135,8 +136,8 @@ function ServiciosTop() {
       </TopServiciosSection>
       <TopServiciosSection>
         <ServicioTop>
-          <Avatar style={{ border: '7px solid #01579b', padding: 16, backgroundColor: 'white', cursor: 'pointer' }} size={200} src="http://www.extintoreshc.com/images/carpinteria_dibujo000.gif" />
-          <ServicioTopLabel>Carpintero</ServicioTopLabel>
+          <Avatar onClick={() => browserHistory.push('/lista-servicios/carpinteria')} style={{ border: '7px solid #01579b', padding: 16, backgroundColor: 'white', cursor: 'pointer' }} size={200} src="http://www.extintoreshc.com/images/carpinteria_dibujo000.gif" />
+          <ServicioTopLabel onClick={() => browserHistory.push('/lista-servicios/carpinteria')} >Carpintero</ServicioTopLabel>
         </ServicioTop>
         <ServicioTop>
           <Avatar style={{ border: '7px solid #01579b', padding: 16, backgroundColor: 'white', cursor: 'pointer' }} size={200} src="http://colorearimagenes.net/wp-content/uploads/2015/11/plomero.jpg" />

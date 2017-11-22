@@ -13,6 +13,7 @@ const styles = {
     fontSize: '16px',
     fontWeight: '500',
     color: '#494949',
+    cursor: 'pointer',
   },
   smallHeader: {
     width: '100px',

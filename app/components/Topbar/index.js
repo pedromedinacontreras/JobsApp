@@ -5,6 +5,7 @@
 */
 
 import React from 'react';
+import { browserHistory } from 'react-router';
 import Avatar from 'material-ui/Avatar';
 import ExpandibleIcon from 'material-ui/svg-icons/navigation/arrow-drop-down';
 import SearchIcon from 'material-ui/svg-icons/action/search';
@@ -42,7 +43,7 @@ class Topbar extends React.Component { // eslint-disable-line react/prefer-state
     return (
       <TopbarSection>
         <LogoSection>
-          <Logo>Servicios mx</Logo>
+          <Logo onClick={() => browserHistory.push('/')}>Servicios mx</Logo>
         </LogoSection>
         <SearcherSection>
           <Searcher>
@@ -61,6 +62,7 @@ class Topbar extends React.Component { // eslint-disable-line react/prefer-state
                 dataSource={this.dataSource}
                 filter={AutoComplete.fuzzyFilter}
                 fullWidth
+                onNewRequest={() => browserHistory.push('lista-servicios/carpinteria')}
               />
             </SearcherTextSection>
           </Searcher>
@@ -70,7 +72,7 @@ class Topbar extends React.Component { // eslint-disable-line react/prefer-state
             <Avatar src="https://laopinionla.files.wordpress.com/2015/11/dove_leduo_hair-emojis_2.png?w=1024" />
           </div>
           <ProfileName>Aslly Melisse Vega Corvera</ProfileName>
-          <ExpandibleSection>
+          <ExpandibleSection style={{ cursor: 'pointer' }} onClick={() => browserHistory.push('/inicio-sesion')}>
             <ExpandibleIcon color="#E1F5FE" />
           </ExpandibleSection>
         </ProfileSection>
