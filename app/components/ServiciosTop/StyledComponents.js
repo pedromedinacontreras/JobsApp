@@ -32,7 +32,7 @@ export const TopServiciosSection = styled.div`
   width: 100%;
   padding: 0 74px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export const ServicioItem = styled.li`
@@ -76,12 +76,34 @@ export const LogoSubText = styled.div`
   font-weight: 300;
 `;
 
+export const ServicioTop = styled.div`
+  width: 200px;
+  margin: 2% 5%;
+`;
 
-// display: flex;
-// Align-items: center;
-// Flex-wrap: wrap;
-// Justify-content- space-between;
+export const ServicioTopLabel = styled.div`
+  width: 200px;
+  color: #01579b;
+  text-align: center;
+  font-size: 18px;
+  margin-top: 16px;
+  margin-bottom: 32px;
+  cursor: pointer;
+  font-weight: bold;
+`;
 
+export const StateColumn = styled.div`
+  float: left;
+  width: 33.33%;
+  text-align: center;
+`;
 
-// Display: inline-block;
-// Margin: 0 3.1rem 1rem 0;
+export const StateItem = styled.div`
+  line-height: 2;
+  cursor: pointer;
+`;
+
+export const StatesSection = styled.div`
+  float: left;
+  width: 100%;
+`;

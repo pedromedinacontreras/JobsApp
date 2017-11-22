@@ -10,14 +10,17 @@ import { createStructuredSelector } from 'reselect';
 import Topbar from 'components/Topbar';
 import ServiciosTop from 'components/ServiciosTop';
 import makeSelectLandingPage from './selectors';
+import {
+  LadingSection,
+} from './styledComponents';
 
 export class LandingPage extends React.Component { // eslint-disable-line react/prefer-stateless-function
   render() {
     return (
-      <div>
+      <LadingSection>
         <Topbar />
         <ServiciosTop />
-      </div>
+      </LadingSection>
     );
   }
 }
